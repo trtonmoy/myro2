@@ -18,17 +18,19 @@ body {
   font-family: "Alien Spaceship", sans-serif;
 }
 
-/**********poor story font***********/
+/**********Akbar font***********/
 @import url("https://fonts.googleapis.com/css2?family=Poor+Story&display=swap"); /************header***********/
 h2,
-h3,
+h3 {
+  font-family: "Akbar", sans-serif;
+}
 p {
   font-family: "Akbar", sans-serif;
 }
 p,
 li,
 span {
-  font-family: "Poor Story", cursive;
+  font-family: "Akbar", cursive;
 }
 .main_nav {
   display: flex;
@@ -202,7 +204,7 @@ span {
 }
 .card_box p {
   color: #fff;
-  font-family: "Poor Story", cursive;
+  font-family: "Akbar", cursive;
   font-size: 21px;
   font-style: normal;
   font-weight: 400;
@@ -343,7 +345,7 @@ ul.list li {
   width: 383.136px;
   padding: 30px;
   height: 380px;
-  font-family: "Poor Story", cursive;
+  font-family: "Akbar", cursive;
   flex-shrink: 0;
   background: #222;
   border: 1px solid yellow;
@@ -361,7 +363,7 @@ ul.list li {
 }
 .roadmap ul li {
   color: #fff;
-  font-family: "Poor Story", cursive;
+  font-family: "Akbar", cursive;
   font-size: 19px;
   font-style: normal;
   font-weight: 400;
