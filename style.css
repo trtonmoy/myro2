@@ -8,7 +8,7 @@ body {
 } /********akbar font**********/
 @font-face {
   font-family: "Akbar"; /* Choose a unique name for your font */
-  src: url("/font/akbar.ttf") format("woff2"),
+  src: url("/font/Grandstander-clean.ttf") format("woff2"),
     /* Modern Browsers */ url("/font/akbar.ttf") format("woff");
 
   /* Older Browsers */ /* You can add more file formats here if needed (e.g., .ttf, .eot) */
@@ -428,7 +428,9 @@ ul.list li {
 
 .acc-content {
   padding: 15px 10px;
-  display: none;
+  color: white;
+  font-size: 20px;
+  /* display: none; */
 }
 
 .acc-head.active::before {
