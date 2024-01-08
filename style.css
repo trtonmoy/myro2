@@ -545,11 +545,26 @@ h3 {
   .road_img {
     width: 100%;
   }
+  .join_cont {
+    font-family: Akbar, sans-serif;
+    font-size: 53px;
+  }
+  .banner_content {
+    margin-top: 15px;
+  }
   .content_box h2 {
     font-size: 65px;
     font-weight: 800;
     color: #fff;
     font-family: "Akbar", sans-serif;
+  }
+  .more_abt_cont h3 {
+    color: #fff;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 40px;
+    line-height: 60px; /* 127.66% */
   }
   .header_wrapper {
     /* background-image: url(/assets/images/banner-star.png); */
@@ -558,6 +573,9 @@ h3 {
     /* background-color: #192a56; */
     background-color: #222;
     height: 145vh;
+  }
+  .roadmap {
+    height: 400px;
   }
   .road_img {
     width: 250px;
