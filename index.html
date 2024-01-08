@@ -214,7 +214,7 @@
           </div>
         </section>
       </section>
-      <section class="blur_sec"></section>
+
       <section class="roadmap_sec">
         <div class="container">
           <div class="text-center title">
@@ -233,6 +233,9 @@
             >
           </div>
         </div>
+ 
+
+
         <div class="col-md-12 text-center wow fadeInDown" data-wow-delay="0.9s">
           <img
             src="/assets/images/rd.png"
@@ -242,6 +245,7 @@
             data-wow-delay="0.12s"
           />
         </div>
+        
         <div class="inner_sec" style="padding-top: 60px">
           <div class="container">
             <div class="row align-items-center">
@@ -308,6 +312,46 @@
             </div>
           </div>
         </div>
+        <!-- faq section -->
+    <section class="faq_sec" style="padding:100px 0 50px">
+        <div class="container" style="text-align: center;">
+           <div class="more_abt_cont">
+                    <h3 style="margin:60px">Faq</h3>
+                    </div>
+          <div class="acc-container">        
+<div class="acc">
+<div class="acc-head">
+<p>Lorem ipsum dolor sit amet.</p>
+</div>
+<div class="acc-content">
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore magnam, nobis consequuntur nemo cupiditate vel sit ducimus quisquam quaerat sint officia ad voluptas consectetur beatae quis illo accusamus vero odit, architecto et.</p>
+</div>
+</div>
+
+<div class="acc">
+<div class="acc-head">
+<p>Lorem ipsum dolor sit amet.</p>
+</div>
+<div class="acc-content">
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore magnam, nobis consequuntur nemo cupiditate vel sit ducimus quisquam quaerat sint officia ad voluptas beatae eveniet. Aliquam aspernatur nulla cupiditate reiciendis ut? Illum odio id odit? Tempore, ea itaque illum laborum quasi, explicabo amet veritatis corporis dolorem minus commodi? Esse repudiandae nam eligendi fugit, architecto quam! Nostrum dolores nisi nulla repudiandae sed tempora impedit quaerat voluptatem itaque suscipit. Placeat adipisci, eius maiores blanditiis possimus culpa? Laudantium officia, nulla repellat rerum tenetur esse quos perferendis. Omnis corporis sequi, recusandae culpa quibusdam doloremque fugiat consectetur beatae quis illo accusamus vero odit, architecto et.</p>
+</div>
+</div>
+
+
+
+<div class="acc">
+<div class="acc-head">
+<p>Lorem ipsum dolor sit amet.</p>
+</div>
+<div class="acc-content">
+<p>Lorem ipsum, dolor sit amet consectetur am, nobis consequuntur nemo cupiditate vel sit ducimus quisquam quaerat sint officia ad voluptas beatae eveniet. Aliquam aspernatur nulla cupiditate reiciendis ut? Illum odio id odit? Tempore, ea itaque illum laborum quasi, explicabo amet veritatis corporis dolorem minus commodi? Esse repudiandae nam eligendi fugit, architecto quam! Nostrum dolores nisi nulla repudiandae sed tempora impedit quaerat voluptatem itaque suscipit. Placeat adipisci, eius maiores blanditiis possimus culpa? Laudantium officia, nulla repellat rerum tenetur esse quos perferendis. Omnis corporis sequi, recusandae culpa quibusdam doloremque fugiat consectetur beatae quis illo accusamus vero odit, architecto et.</p>
+</div>
+</div>
+</div>
+          
+</div>
+        </div>
+      </section> 
         <div class="wrapper_div" style="padding: 100px 0 80px">
           <div class="community_sec">
             <div class="wrapper">
@@ -323,7 +367,7 @@
                   <img
                     src="/assets/images/logo.png"
                     alt=""
-                    style="width: 450px"
+                    style="max-width: 450px;width:100%"
                     class="comm_img floating"
                   />
                 </div>
@@ -405,7 +449,10 @@
             </div>
           </div>
         </div>
+         
       </section>
+
+    
     </main>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
@@ -482,6 +529,23 @@
           easing: "easeOutExpo",
           delay: 1500,
         });
+
+      //faq section
+      $(document).ready(function () {
+        $(".acc-container .acc:nth-child(1) .acc-head").addClass("active");
+        $(".acc-container .acc:nth-child(1) .acc-content").slideDown();
+        $(".acc-head").on("click", function () {
+          if ($(this).hasClass("active")) {
+            $(this).siblings(".acc-content").slideUp();
+            $(this).removeClass("active");
+          } else {
+            $(".acc-content").slideUp();
+            $(".acc-head").removeClass("active");
+            $(this).siblings(".acc-content").slideToggle();
+            $(this).toggleClass("active");
+          }
+        });
+      });
     </script>
   </body>
 </html>
