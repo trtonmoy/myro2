@@ -57,6 +57,8 @@ span {
   border-radius: 6px;
   line-height: 40px;
   transition: all 0.3s ease;
+  z-index: 9999999;
+  cursor: pointer;
 }
 .icon2 {
   border-radius: 50%;
